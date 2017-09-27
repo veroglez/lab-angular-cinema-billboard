@@ -1,7 +1,6 @@
 <div>
-  <ul >
-    <li>
-    holi
-    </li>
+  <ul *ngFor="let e of movies">
+    <li><img [src]="e.poster" alt="" width="200"></li>
+    <li><a [routerLink]="['/movie',e.id]"> {{e.title}} </a></li>
   </ul>
 </div>

@@ -10,7 +10,7 @@ import { MoviesService } from '../services/Cinema.service';
 export class MyHomeComponentComponent implements OnInit {
 
   constructor(private theCinema: MoviesService) { }
-
+  movies = this.theCinema.movies
   ngOnInit() {
   }
 
