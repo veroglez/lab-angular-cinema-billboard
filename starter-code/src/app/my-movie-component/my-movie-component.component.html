@@ -1,3 +1,14 @@
-<p>
-  my-movie-component works!
-</p>
+<div>
+  <ul>
+    <li><img [src]="movies[moviesId-1].poster" alt="" width="200"></li>
+    <li><b>Title:</b> {{movies[moviesId-1].title}}</li>
+    <li><b>Synopsis:</b> {{movies[moviesId-1].synopsis}}</li>
+    <li><b>Genres:</b> {{movies[moviesId-1].genres}}</li>
+    <li><b>Year:</b> {{movies[moviesId-1].year}}</li>
+    <li><b>Director:</b> {{movies[moviesId-1].director}}</li>
+    <li><b>Actors:</b> {{movies[moviesId-1].actors}}</li>
+    <li><b>Hours:</b> {{movies[moviesId-1].hours}}</li>
+    <li><b>Room:</b> {{movies[moviesId-1].room}}</li>
+  </ul>
+  <a [routerLink]="['/home']">Go back</a>
+</div>
